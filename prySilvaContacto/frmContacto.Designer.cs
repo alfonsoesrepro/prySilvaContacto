@@ -41,24 +41,26 @@
             // lblContacto
             // 
             lblContacto.AutoSize = true;
-            lblContacto.Location = new Point(39, 83);
+            lblContacto.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblContacto.Location = new Point(44, 82);
             lblContacto.Name = "lblContacto";
-            lblContacto.Size = new Size(56, 15);
+            lblContacto.Size = new Size(65, 19);
             lblContacto.TabIndex = 0;
             lblContacto.Text = "Contacto";
             // 
             // lblTelefono
             // 
             lblTelefono.AutoSize = true;
-            lblTelefono.Location = new Point(43, 150);
+            lblTelefono.Font = new Font("Segoe UI", 10F);
+            lblTelefono.Location = new Point(44, 150);
             lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(52, 15);
+            lblTelefono.Size = new Size(60, 19);
             lblTelefono.TabIndex = 1;
             lblTelefono.Text = "Teléfono";
             // 
             // cmdGrabar
             // 
-            cmdGrabar.Location = new Point(302, 201);
+            cmdGrabar.Location = new Point(302, 204);
             cmdGrabar.Name = "cmdGrabar";
             cmdGrabar.Size = new Size(75, 23);
             cmdGrabar.TabIndex = 2;
@@ -68,14 +70,14 @@
             // 
             // txtContacto
             // 
-            txtContacto.Location = new Point(277, 75);
+            txtContacto.Location = new Point(277, 82);
             txtContacto.Name = "txtContacto";
             txtContacto.Size = new Size(100, 23);
             txtContacto.TabIndex = 3;
             // 
             // mskTelefono
             // 
-            mskTelefono.Location = new Point(277, 142);
+            mskTelefono.Location = new Point(277, 150);
             mskTelefono.Mask = "000-0000";
             mskTelefono.Name = "mskTelefono";
             mskTelefono.Size = new Size(100, 23);
@@ -85,7 +87,7 @@
             // 
             lstDatos.FormattingEnabled = true;
             lstDatos.ItemHeight = 15;
-            lstDatos.Location = new Point(35, 248);
+            lstDatos.Location = new Point(35, 257);
             lstDatos.Name = "lstDatos";
             lstDatos.Size = new Size(342, 49);
             lstDatos.TabIndex = 5;
@@ -93,18 +95,18 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblTitulo.Font = new Font("Arial", 13F, FontStyle.Bold);
             lblTitulo.Location = new Point(12, 30);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(232, 21);
+            lblTitulo.Size = new Size(147, 21);
             lblTitulo.TabIndex = 6;
-            lblTitulo.Text = "Ingrese los datos de contacto";
+            lblTitulo.Text = "Nuevo contacto";
             // 
             // frmContacto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.GradientActiveCaption;
+            BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(475, 341);
             Controls.Add(lblTitulo);
             Controls.Add(lstDatos);
@@ -116,6 +118,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmContacto";
             Text = "Contactos";
+            Load += frmContacto_Load;
             ResumeLayout(false);
             PerformLayout();
         }

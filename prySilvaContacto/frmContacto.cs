@@ -22,5 +22,10 @@ namespace prySilvaContacto
             mskTelefono.Clear();
             txtContacto.Focus();
         }
+
+        private void frmContacto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
