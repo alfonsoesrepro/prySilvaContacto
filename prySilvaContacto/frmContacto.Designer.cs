@@ -63,7 +63,7 @@
             cmdGrabar.TabIndex = 2;
             cmdGrabar.Text = "Grabar";
             cmdGrabar.UseVisualStyleBackColor = true;
-            cmdGrabar.Click += this.cmdGrabar_Click;
+            cmdGrabar.Click += cmdGrabar_Click;
             // 
             // txtContacto
             // 
@@ -84,7 +84,6 @@
             // 
             lstDatos.FormattingEnabled = true;
             lstDatos.ItemHeight = 15;
-            lstDatos.Items.AddRange(new object[] { "1 __ __", "2 __ __", "3 __ __" });
             lstDatos.Location = new Point(35, 248);
             lstDatos.Name = "lstDatos";
             lstDatos.Size = new Size(342, 49);
