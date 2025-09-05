@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContacto));
             lblContacto = new Label();
             lblTelefono = new Label();
             cmdGrabar = new Button();
@@ -92,9 +93,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblTitulo.Location = new Point(12, 30);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(161, 15);
+            lblTitulo.Size = new Size(232, 21);
             lblTitulo.TabIndex = 6;
             lblTitulo.Text = "Ingrese los datos de contacto";
             // 
@@ -111,8 +113,9 @@
             Controls.Add(cmdGrabar);
             Controls.Add(lblTelefono);
             Controls.Add(lblContacto);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmContacto";
-            Text = "Ingreso de datos de contacto";
+            Text = "Contactos";
             ResumeLayout(false);
             PerformLayout();
         }
