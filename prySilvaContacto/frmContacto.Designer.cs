@@ -117,6 +117,7 @@
             Controls.Add(lblContacto);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmContacto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Contactos";
             Load += frmContacto_Load;
             ResumeLayout(false);

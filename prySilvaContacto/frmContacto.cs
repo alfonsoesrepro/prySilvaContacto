@@ -9,14 +9,24 @@ namespace prySilvaContacto
 
         string contacto;
         string telefono;
-        int cont = 0;
+        int cont = 1;
+
+        string[] aContacto = new string[4];
+        string[] aTelefono = new string[4];
+        int i = 0;
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
-            contacto = txtContacto.Text;
-            telefono = mskTelefono.Text;
+            //contacto = txtContacto.Text;
+            //telefono = mskTelefono.Text;
+
+            aContacto[i] = txtContacto.Text;
+            aTelefono[i] = mskTelefono.Text;
+
+            
+            lstDatos.Items.Add(cont + ". " + aContacto[i] + " - " + aTelefono[i]);
             cont++;
-            lstDatos.Items.Add(cont + ". " + contacto + " - " + telefono);
+            i++;
 
             txtContacto.Clear();
             mskTelefono.Clear();
